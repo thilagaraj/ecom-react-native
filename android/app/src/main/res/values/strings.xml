@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Trolley Fresh</string>
+    <string name="paytm_staging_merchant_key">9GKCBOsDkHgdxL69</string>
+    <string name="paytm_production_merchant_key">9GKCBOsDkHgdxL69</string>
+</resources>

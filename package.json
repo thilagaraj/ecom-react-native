@@ -1,0 +1,61 @@
+{
+  "name": "TrolleyFresh",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start:": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "android-clean": "cd android && ./gradlew clean && cd ..",
+    "start:packager": "watchman watch-del-all && react-native start -- --reset-cache",
+    "clear": "watchman watch-del-all && rm -rf $TMPDIR/react-* && rm -rf node_modules/ && npm cache clean && npm install",
+    "start:dev": "node_modules/.bin/webpack-dev-server --inline --progress --port 3060",
+    "start:test": "node_modules/.bin/webpack-dev-server --inline --progress --port 3060 --host 0.0.0.0 --disableHostCheck true"
+  },
+  "dependencies": {
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "bluebird": "^3.5.1",
+    "camelize": "^1.0.0",
+    "history": "^4.7.2",
+    "install": "^0.10.2",
+    "jquery": "^3.2.1",
+    "native-base": "^2.3.3",
+    "npm": "^5.5.1",
+    "platform": "^1.3.4",
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-countdown-now": "^1.2.0",
+    "react-dom": "^16.1.1",
+    "react-gif": "^0.1.0",
+    "react-gif-player": "^0.2.2",
+    "react-icons": "^2.2.7",
+    "react-native": "0.51.0",
+    "react-native-device-info": "^0.13.0",
+    "react-native-navigation": "^1.1.298",
+    "react-native-vector-icons": "^4.4.2",
+    "react-native-web": "^0.1.13",
+    "react-redux": "^5.0.6",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-split-pane": "^0.1.71",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "require": "^2.4.20",
+    "superagent": "^3.8.1",
+    "toastr": "^2.1.2",
+    "webpack": "^3.8.1"
+  },
+  "devDependencies": {
+    "babel-jest": "21.2.0",
+    "babel-preset-react-native": "4.0.0",
+    "file-loader": "^1.1.5",
+    "jest": "21.2.1",
+    "react-test-renderer": "16.0.0",
+    "url-loader": "^0.6.2",
+    "webpack-dev-server": "^2.9.4"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}

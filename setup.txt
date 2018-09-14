@@ -1,0 +1,9 @@
+# Steps to configure mobile app:
+
+0. react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
+
+1. Once step 0 is complete in console hit: react-native start -- --reset-cache
+
+2. To run android App in Emulator in console hit : react-native run-android
+   Note: While running this the computer must have emulator open or Device connected
+
